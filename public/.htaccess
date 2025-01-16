@@ -1,0 +1,11 @@
+    RewriteEngine On
+    RewriteBase /
+
+    # Redirect category and subcategory URLs to index.php with appropriate parameters
+    RewriteRule ^category/([^/]+)/([^/]+)/?$ index.php?parentSlug=$1&slug=$2 [QSA,L]
+
+    # Optional: If you want to handle a single category without subcategory, you can use:
+    RewriteRule ^category/([^/]+)/?$ index.php?slug=$1 [QSA,L]
+
+    # Optionally, you can add rules to handle specific file extensions, like PHP
+    RewriteRule ^([a-zA-Z0-9_-]+)$ $1.php [NC,L]

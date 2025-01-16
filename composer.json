@@ -1,0 +1,19 @@
+{
+    "name": "khoul/nested_ctgs",
+    "description": "Nested Categories with Friendly URLs (PHP OOP)",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "khouloud Haddad Amamou",
+            "email": "khouloud.haddad@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
